@@ -4,64 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/Black">
 
-    <Button
-        android:id="@+id/answer4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:text="Button" />
-
-
-    <Button
-        android:id="@+id/answer3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/answer4"
-        android:layout_centerHorizontal="true"
-        android:text="Button" />
-
-
-
-    <Button
-        android:id="@+id/answer2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/answer3"
-        android:layout_centerHorizontal="true"
-        android:text="Button" />
 
     <TextView
-        android:text="TextView"
-        android:layout_width="match_parent"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:textSize="24dp"
-        android:id="@+id/score" />
+        android:textColor="@color/White"
+        android:layout_marginTop="50dp"
+        android:text="Quiz"
+        android:textSize="20dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"/>
 
     <TextView
-        android:text="TextView"
-        android:layout_width="match_parent"
+        android:id="@+id/init"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_below="@+id/score"
-        android:textSize="24dp"
+        android:text="Please Wait"
+        android:layout_below="@id/progressBar"
+        android:textColor="@color/White"
         android:layout_centerHorizontal="true"
-        android:id="@+id/question"
-        android:layout_above="@+id/answer1" />
-
-    <Button
-        android:text="Button"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/answer1"
-        android:layout_above="@+id/answer2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true" />
-
+        android:layout_marginTop="20dp"/>
 </RelativeLayout>
