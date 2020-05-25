@@ -37,18 +37,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calc_clear_txt_Prise" />
 
-    <LinearLayout
-        android:id="@+id/l1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/quiz_title"
-        android:orientation="horizontal">
-
-
-    </LinearLayout>
 
     <ProgressBar
-        android:id="@+id/progressBar2"
+        android:id="@+id/quiz_question_progress"
         android:layout_width="78dp"
         android:layout_height="80dp"
         android:layout_marginStart="80dp"
@@ -68,7 +59,7 @@
         android:text="Question"
         android:textColor="@color/White"
         android:textSize="15dp"
-        app:layout_constraintEnd_toStartOf="@+id/progressBar2"
+        app:layout_constraintEnd_toStartOf="@+id/quiz_question_progress"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/quiz_title" />
 
@@ -90,7 +81,7 @@
         android:layout_marginEnd="99dp"
         android:text="0"
         android:textColor="@color/White"
-        app:layout_constraintEnd_toStartOf="@+id/progressBar2"
+        app:layout_constraintEnd_toStartOf="@+id/quiz_question_progress"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/details_difficulty" />
 
@@ -104,7 +95,7 @@
         android:text="Option Button"
         android:textColor="@color/Yellow"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
+        app:layout_constraintTop_toBottomOf="@+id/quiz_question_progress" />
 
     <Button
         android:id="@+id/button2"
